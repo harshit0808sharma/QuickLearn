@@ -1,7 +1,7 @@
 import BackButton from "@/app/components/other/BackButton";
 import { Question } from "@/app/components/other/Question";
 
-const page = async ({ params }) => {
+const Page = async ({ params }) => {
     const unwrappedParams = await params;
 
     return (
@@ -12,4 +12,4 @@ const page = async ({ params }) => {
     )
 }
 
-export default page;
+export default Page;

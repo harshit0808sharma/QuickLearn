@@ -13,7 +13,7 @@ import Header from '@/app/components/other/Header';
 import BackButton from '@/app/components/other/BackButton';
 // import { useParams } from 'next/navigation';
 
-const page = async ({ params }) => {
+const Page = async ({ params }) => {
     const unwrappedParams = await params;
     const course = CoursesData.find((item) => item.courseName.toLowerCase().replace(/\s+/g, '') === unwrappedParams.course);
     
@@ -67,4 +67,4 @@ const page = async ({ params }) => {
     )
 }
 
-export default page;
+export default Page;

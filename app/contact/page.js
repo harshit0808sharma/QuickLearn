@@ -4,7 +4,7 @@ import Footer from "../components/layout/Footer";
 import Navbar from "../components/layout/Navbar";
 import Header from "../components/other/Header";
 
-export default function page() {
+export default function ContactPage() {
     const [error, setError] = useState({});
     const [data, setData] = useState({
         name: "",

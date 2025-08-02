@@ -5,7 +5,7 @@ import Testimonials from "../components/aboutcomponents/Testimonials";
 import Team from "../components/aboutcomponents/Team";
 import { OurServices } from "../components/homecarts/OurServices";
 
-const page = () => {
+const AboutPage = () => {
     return (
         <>
             <Navbar />
@@ -20,4 +20,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default AboutPage;

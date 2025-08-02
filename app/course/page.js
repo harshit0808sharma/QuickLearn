@@ -12,7 +12,7 @@ import Header from '../components/other/Header';
 
 const categories = ["all", "front-end", "back-end", "database", "tools"];
 
-const Page = () => {
+const CoursePage = () => {
   const [query, setQuery] = useState('');
   const [show, setShow] = useState(false);
   const [activeCategory, setActiveCategory] = useState("all");
@@ -139,4 +139,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default CoursePage;

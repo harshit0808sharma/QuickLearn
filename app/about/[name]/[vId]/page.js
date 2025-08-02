@@ -1,7 +1,7 @@
 import VideoCard from "@/app/components/aboutcomponents/VideoCard";
 import BackButton from "@/app/components/other/BackButton";
 
-export default async function page({params}){
+export default async function Page({params}){
     const unwrappedParams = await params;
     return(
         <>
