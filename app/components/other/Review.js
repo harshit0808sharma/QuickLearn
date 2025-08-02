@@ -3,6 +3,7 @@
 import { QuickContext } from "@/app/context/QuickContext";
 import { useContext, useState } from "react";
 import { FaArrowLeft, FaArrowRight, FaStar, FaUserCircle } from "react-icons/fa";
+import Image from "next/image";
 
 export default function Review() {
   const { reviews } = useContext(QuickContext);
@@ -33,7 +34,7 @@ export default function Review() {
 
   const renderProfile = (img) =>
     img ? (
-      <img
+      <Image
         src={img}
         alt="Reviewer"
         className="w-14 h-14 rounded-full object-cover border border-gray-400"

@@ -17,19 +17,20 @@ export const Question = ({ unwrappedParams }) => {
   const [questionsData, setQuestionsData] = useState([]);
   const { htmlData, cssData } = useContext(QuickContext);
 
-  useEffect(() => {
-    let data = [];
-    if (course === "html") {
-      data = htmlData;
-    } else if (course === "css") {
-      data = cssData;
-    }
+useEffect(() => {
+  let data = [];
+  if (course === "html") {
+    data = htmlData;
+  } else if (course === "css") {
+    data = cssData;
+  }
 
-    setQuestionsData(data);
+  setQuestionsData(data);
 
-    const questionData = data.find((item) => Number(item.qId) === currentId);
-    setQData(questionData);
-  }, [currentId, course]);
+  const questionData = data.find((item) => Number(item.qId) === currentId);
+  setQData(questionData);
+}, [currentId, course, htmlData, cssData]);
+
 
   const handlePrev = () => {
     setCurrentId((prev) => (prev > 1 ? prev - 1 : prev));
