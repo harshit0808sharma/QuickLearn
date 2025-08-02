@@ -56,27 +56,4 @@ export default function Hero() {
       </div>
     </div>
   );
-}          </Link>
-          <Link
-            href="/about"
-            className="px-6 py-3 bg-green-500 hover:bg-green-600 text-white rounded-lg text-lg font-medium text-center transition"
-          >
-            About Us
-          </Link>
-        </div>
-      </div>
-
-      {/* Right Section */}
-      <div className="relative w-full max-w-2xl h-[500px] sm:max-w-md md:max-w-md lg:max-w-lg aspect-[4/3]">
-        <Image
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-          src={logo} //
-          alt="Hero Illustration"
-          fill
-          priority
-          className="object-contain"
-        />
-      </div>
-    </div>
-  );
 }
