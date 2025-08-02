@@ -72,7 +72,7 @@ export default function Review() {
         {/* Center Review Card */}
         <div className="w-full max-w-lg bg-gray-800 backdrop-blur-md text-white p-6 rounded-xl shadow-xl text-center space-y-5 border border-gray-800">
           <div className="flex justify-center">{renderProfile(reviews[index].image)}</div>
-          <p className="text-xl italic font-medium">"{reviews[index].content}"</p>
+          <p className="text-xl italic font-medium">{reviews[index].content}</p>
           <h4 className="text-lg font-bold">{reviews[index].name}</h4>
           {renderStars(reviews[index].rating)}
           <p className="text-gray-300">{reviews[index].description}</p>
