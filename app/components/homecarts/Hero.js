@@ -44,8 +44,8 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Right Section (Image) */}
-      <div className="relative w-full max-w-md lg:max-w-lg aspect-[4/3]">
+      {/* Right Section - BIGGER IMAGE */}
+      <div className="relative w-full max-w-2xl aspect-[4/3]">
         <Image
           src={logo}
           alt="Hero Illustration"
