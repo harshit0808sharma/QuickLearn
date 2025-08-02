@@ -1,22 +1,22 @@
-'use client'
+'use client';
 import Link from 'next/link';
 import Image from 'next/image';
-import logo from '../../../public/assets/images/boy3.png'
+import logo from '../../../public/assets/images/boy3.png';
 
 export default function Hero() {
-  // console.log(logo)
   return (
-    <div className="min-h-screen flex justify-around flex-wrap items-center bg-gray-800 text-white">
-
+    <div className="min-h-screen flex flex-col-reverse lg:flex-row items-center justify-between gap-12 px-6 py-10 bg-gray-800 text-white">
       {/* Left Section */}
       <div className="flex flex-col gap-6 max-w-xl">
-        <p className="text-yellow-400 text-lg font-medium tracking-wide">Educational Goal</p>
+        <p className="text-yellow-400 text-lg font-semibold tracking-wide">
+          Educational Goal
+        </p>
 
         <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight">
           Learn Programming Skills Online!
         </h1>
 
-        <p className="text-sm sm:text-base md:text-xl max-w-md text-gray-100">
+        <p className="text-base sm:text-lg md:text-xl max-w-md text-gray-100">
           Master the art of coding with our high-quality courses and interactive content to boost your career.
         </p>
 
@@ -44,11 +44,33 @@ export default function Hero() {
         </div>
       </div>
 
+      {/* Right Section (Image) */}
+      <div className="relative w-full max-w-md lg:max-w-lg aspect-[4/3]">
+        <Image
+          src={logo}
+          alt="Hero Illustration"
+          fill
+          priority
+          className="object-contain"
+        />
+      </div>
+    </div>
+  );
+}          </Link>
+          <Link
+            href="/about"
+            className="px-6 py-3 bg-green-500 hover:bg-green-600 text-white rounded-lg text-lg font-medium text-center transition"
+          >
+            About Us
+          </Link>
+        </div>
+      </div>
+
       {/* Right Section */}
       <div className="relative w-full max-w-2xl h-[500px] sm:max-w-md md:max-w-md lg:max-w-lg aspect-[4/3]">
         <Image
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-          src={logo} // ✅ not logo.src
+          src={logo} //
           alt="Hero Illustration"
           fill
           priority
