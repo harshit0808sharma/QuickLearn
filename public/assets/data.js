@@ -11,6 +11,7 @@ import asp from '../assets/images/AspDotNetCoreLogo.jpg'
 import img from '../assets/images/QuickLearn.png'
 import harshit from '../assets/images/boy2.png'
 import thedrawerboy from '../assets/images/thedrawerboy.png'
+import boy from '../assets/images/boy2.png'
 
 export const CoursesData = [
     {
@@ -244,7 +245,7 @@ export const reviews = [
         name: "Alice",
         rating: 5,
         content: "Great course!",
-        image: "",
+        image: boy,
         description:
             "One of the best learning experiences. The instructor's clarity and real-world examples were amazing.",
     },
@@ -253,7 +254,7 @@ export const reviews = [
         name: "Bob",
         rating: 4,
         content: "Very useful.",
-        image: "",
+        image: boy,
         description:
             "Good pace and structured well. I gained practical skills I could apply immediately.",
     },
@@ -262,7 +263,7 @@ export const reviews = [
         name: "Charlie",
         rating: 5,
         content: "Loved it.",
-        image: "",
+        image: boy,
         description:
             "Fantastic course! The community support and assignments helped a lot in deep learning.",
     },
@@ -271,7 +272,7 @@ export const reviews = [
         name: "Diana",
         rating: 3,
         content: "Could be better.",
-        image: "",
+        image: boy,
         description:
             "Decent, but would love more real-world projects and clearer explanations in a few areas.",
     },
@@ -280,7 +281,7 @@ export const reviews = [
         name: "Ethan",
         rating: 5,
         content: "Excellent!",
-        image: "",
+        image: boy,
         description:
             "Simple, well-paced and full of real examples. This course boosted my confidence a lot.",
     },

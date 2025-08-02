@@ -8,7 +8,7 @@ import Footer from "@/app/components/layout/Footer";
 import Navbar from "@/app/components/layout/Navbar";
 import Link from "next/link";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import Header from "./Header";
+// import Header from "./Header";
 
 export const Question = ({ unwrappedParams }) => {
   const { course, qId } = unwrappedParams;

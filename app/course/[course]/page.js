@@ -33,7 +33,7 @@ const Page = async ({ params }) => {
                     />
 
                     <div className="flex flex-col gap-10 text-white">
-                        <div className=''>
+                        <div>
                             <h1 className="text-5xl font-bold text-white mb-4">
                                 {course?.courseName}
                             </h1>
